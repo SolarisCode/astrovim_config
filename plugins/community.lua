@@ -6,6 +6,11 @@ return {
 
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.colorscheme.gruvbox" },
+  { import = "astrocommunity.colorscheme.dracula" },
+  { import = "astrocommunity.colorscheme.kanagawa" },
+  { import = "astrocommunity.colorscheme.monokai-pro" },
+  { import = "astrocommunity.colorscheme.nightfox" },
+  { import = "astrocommunity.colorscheme.iceberg" },
   { import = "astrocommunity.colorscheme.gruvbox-baby" },
   { import = "astrocommunity.motion.nvim-surround" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
