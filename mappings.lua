@@ -21,10 +21,19 @@ return {
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
     ["<leader>x"] = { "<cmd>:x<cr>", desc = "Save/Quit" },
+    ["<leader>z"] = { "<cmd>q!<cr>", desc = "Force quit" },
     ["<C-h"] = { "<cmd> TmuxNavigateLeft<cr>", desc = "Window Left" },
     ["<C-l"] = { "<cmd> TmuxNavigateLeft<cr>", desc = "Window Right" },
     ["<C-j"] = { "<cmd> TmuxNavigateLeft<cr>", desc = "Window Down" },
     ["<C-k"] = { "<cmd> TmuxNavigateLeft<cr>", desc = "Window Up" },
+    ["<S-l>"] = {
+      function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
+      desc = "Next buffer",
+    },
+    ["<S-h>"] = {
+      function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
+      desc = "Previous buffer",
+    },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },

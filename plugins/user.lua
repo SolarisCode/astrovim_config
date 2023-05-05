@@ -28,4 +28,8 @@ return {
     "christoomey/vim-tmux-navigator",
     lazy = false,
   },
+  {
+    "42Paris/42header",
+    lazy = false,
+  },
 }

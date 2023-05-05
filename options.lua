@@ -7,15 +7,22 @@ return {
     spell = false, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
+    shiftwidth = 4, -- Number of space inserted for indentation
+    tabstop = 4, -- Number of space in a tab
+    expandtab = false, -- Enable the use of space in tab
+    list = true,
+    listchars = "space:·,tab:⟶ ",
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
-    autoformat_enabled = true, -- enable or disable auto formatting at start (lsp.formatting.format_on_save must be enabled)
+    autoformat_enabled = false, -- enable or disable auto formatting at start (lsp.formatting.format_on_save must be enabled)
     cmp_enabled = true, -- enable completion at start
     autopairs_enabled = true, -- enable autopairs at start
     diagnostics_mode = 3, -- set the visibility of diagnostics in the UI (0=off, 1=only show in status line, 2=virtual text off, 3=all on)
     icons_enabled = true, -- disable icons in the UI (disable if no nerd font is available, requires :PackerSync after changing)
     ui_notifications_enabled = true, -- disable notifications when toggling UI elements
+    user42 = "melkholy",
+    mail42 = "melkholy@student.42.fr",
   },
 }
 -- If you need more control, you can use the function()...end notation
